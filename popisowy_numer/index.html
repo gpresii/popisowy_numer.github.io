@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="refresh" content="1000">
+	<meta name="keywords" content="strona blog 0, blog">
+	<title>Komputer</title>
+	<link rel="icon" type="image/x-icon" href="chip.PNG">
+	<style>
+		body{margin:auto;font-family: Vintage;
+		background-image: url('./assets/ciemny_motyw/tlo.jpg');
+		background-repeat: no-repeat; 
+		background-size: 100% 100%;
+		background-attachment: fixed;
+		width: 100vh;
+		height: 100vh;
+		}
+		
+		::selection {
+		background-color: white;
+		color: blue;
+		}
+		
+		h1{font-size:40px;
+		margin-top:40px;
+		margin-bottom:40px;}
+		
+		header#nagl-str{text-align:center;
+		border:6px solid blue;
+		outline:6px solid black;
+		margin-top: 10px;
+		padding-top:4px;
+		padding-bottom:4px;
+		color: yellow;
+		width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 20px;
+		}
+		
+		article{width:73%}
+		
+		h2{margin:0px;}
+		
+		h4{font-size: 200%;
+		}
+		
+		header>p{font-size:0.8em;}
+		
+		ul{list-style: none; display:inline-flex;}
+		
+		li{margin:10px;}
+		
+		a:link{color: white;}
+		
+		nav#archiwum{ 
+		line-height:1.5em; 
+		margin-top: 10px;
+		color:white;
+		}
+		
+		ul#lista{display:inline; 
+		margin-top:100px;
+		width: 500px;}
+		
+		.button{
+		background-color: white;
+		border: 6px solid blue;
+		outline: 2px solid white;
+		color: black;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		width: 100px;
+		margin: auto;
+		text-align: center;
+		font-size: 16px;
+		cursor: pointer;
+		display: block;
+		box: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		text-decoration:none;
+		border-radius:30px;
+		transition: background-color 2s, outline-color 2s, border-color 2s;
+		margin-bottom: 10px;}
+		
+		.button:active {
+		background-color: #0056b3;
+		}
+		
+		.button:hover{transform: scale(1.1);
+		background-color: cyan;
+		outline-color: cyan;
+		border-color: black;
+		}
+		
+		li{
+		display: block;}
+		
+		li#nr1{
+		float: left;
+		margin-top: 0px;
+		margin-left: 0px;
+		}
+		
+		li#nr2{
+		float: right;
+		margin-top: 0px;
+		margin-right: 0px;
+		text-align: right;
+		}
+		
+		li#nr3{
+		float: left;
+		margin-top: 0px;
+		margin-left: 0px;
+		}
+		
+		li#nr4{
+		float: right;
+		margin-top: 0px;
+		margin-right: 0px;}
+		
+		li#nr5{
+		float: left;
+		margin-top: 0px;
+		margin-left: 0px;}
+		
+		li#nr6{
+		float: right;
+		margin-top: 0px;
+		margin-right: 0px;}
+
+		li#nr7{
+			float: left;
+		margin-top: 0px;
+		margin-left: 0px;
+		}
+		
+		div{border: 4px solid white;
+		background-color: rgba(0, 0, 0, 0.8);
+		margin-bottom: 10px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border-radius:60px;
+		}
+		
+		a#przy1{margin-left: 100px;
+		}
+		
+		a#przy2{margin-right: 90px
+		}
+		
+		a#przy3{margin-left: 55px;
+		}
+		
+		a#przy4{margin-right: 120px;
+		}
+		
+		a#przy5{margin-left: 170px;
+		}
+		
+		a#przy6{margin-right: 100px;
+		}
+		
+		a#przy7{margin-left: 105px;
+		}
+
+		img#img1{float: right;
+		margin-top: -211px;
+		margin-left: 300px;
+		border-radius: 50px;
+		border:3px solid blue;
+		}
+		
+		img#img2{margin-top: 0px;
+		float: left;
+		border-radius: 50px;
+		margin-right: 300px;
+		margin-top: -211px;
+		border:3px solid blue;
+		}
+		
+		img#img3{float: right;
+		margin-top: -211px;
+		margin-left: 220px;
+		border-radius: 50px;
+		border:3px solid blue;
+		}
+		
+		img#img4{float: right;
+		border-radius: 50px;
+		border:3px solid blue;
+		margin-right: 355px;
+		margin-top: -211px;
+		}
+		
+		img#img5{float: left;
+		border-radius: 50px;
+		border:3px solid blue;
+		margin-left: 450px;
+		margin-top: -211px;
+		}
+		
+		img#img6{float: right;
+		border-radius: 50px;
+		border:3px solid blue;
+		margin-right: 315px;
+		margin-top: -211px;
+		}
+
+		img#img7{float: left;
+		border-radius: 50px;
+		border:3px solid blue;
+		margin-left: 350px;
+		margin-top: -211px;
+		}
+		
+		h4#nagl1{
+		margin-left: 80px;}
+		
+		h4#nagl2{
+		margin-right: 50px;}
+		
+		h4#nagl3{
+		margin-left: 45px;}
+		
+		h4#nagl4{
+		margin-left: 340px;}
+		
+		h4#nagl5{
+		margin-left: 125px;}
+		
+		h4#nagl6{
+		margin-left: 295px;}
+		
+		h4#nagl7{
+		margin-left: 100px;}
+		
+		p#tekst1{margin-left: 5px;}
+		
+		p#tekst2{margin-right: 50px;}
+		
+		p#tekst3{margin-left: 30px;}
+		
+		p#tekst4{margin-left: 280px;}
+		
+		p#tekst5{margin-left: 10px;}
+		
+		p#tekst6{margin-left: 285px;}
+
+		p#tekst7{margin-left: 40px;}
+	</style>
+	
+</head>
+<body>
+	<header id="nagl-str">
+		<h1>Części Komputerowe</h1>
+	</header>
+<nav id="archiwum" class="ja">
+	<b>
+	<ul id="lista">
+			<li id="nr1">
+			<div>
+			
+			<h4 id="nagl1">Obudowa</h4>
+			<p id="tekst1">Ochrania pozostałe części komputera</p>
+			
+			<a href="./assets/obudowa.html" class="button" id="przy1">Więcej o</a>
+			<img id="img1" src="./assets/obrazy/obudowa.jpg" style="width:250px;height:200px;" title="Obudowa komputera" alt="Tu miał być obrazek z obudową komputera.">
+			</div>
+			</li>
+			
+			<li id="nr2">
+			<div>
+			<h4 id="nagl2">Płyta główna</h4>
+			<p id="tekst2">Łączy elementy komputera</p>
+			
+			<a href="./assets/plyta.html" class="button" id="przy2">Więcej o</a>
+			<img id="img2" src="./assets/obrazy/plyta.webp" style="width:250px;height:200px;" title="Widok na płytę główną" alt="Tu miała być płyta główna.">
+			</div>
+			</li>
+			
+			<li id="nr3">
+			<div>
+			
+			<h4 id="nagl3">Procesor</h4>
+			<p id="tekst3">Analizuje informacje</p>
+			
+			<a href="./assets/procesor.html" class="button" id="przy3">Więcej o</a>
+			<img id="img3" src="./assets/obrazy/test.webp" style="width:250px;height:200px;" title="Procesor" alt="Tu miał być procesor.">
+			</div>
+			</li>
+			
+			<li id="nr4">
+			<div>
+			<h4 id="nagl4">Pamięć RAM</h4>
+			<p id="tekst4">Uruchamianie i wykonywanie programów.</p>
+			
+			<a href="./assets/ram.html" class="button" id="przy4">Więcej o</a>
+			<img id="img4" src="./assets/obrazy/ram.webp" style="width:250px;height:200px;" title="Kości pamięci RAM" alt="Tu miały być przykładowe kości pamięci RAM.">
+			</div>
+			</li>
+			
+			<li id="nr5">
+			<div>
+			<h4 id="nagl5">Dysk Pamięci</h4>
+			<p id="tekst5">Zapisywanie, przechowywanie i przetwarzanie danych.</p>
+			
+			<a href="./assets/dyski.html" class="button" id="przy5">Więcej o</a>
+			<img id="img5" src="./assets/obrazy/dyski.jpg" style="width:250px;height:200px;" title="Dyski pamięci" alt="Tu miały być przykładowe HDD i SSD.">
+			</div>
+			</li>
+			
+			<li id="nr6">
+			<div>
+			<h4 id="nagl6">Karta graficzna</h4>
+			<p id="tekst6">Tworzenie i wyświetlanie obrazów.</p>
+			
+			<a href="./assets/karta.html" class="button" id="przy6">Więcej o</a>
+			<img id="img6" src="./assets/obrazy/karta.jpg" style="width:250px;height:200px;" title="Karta graficzna" alt="Tu miał być obraz karty graficznej.">
+			</div>
+			</li>
+			
+			<li id="nr7">
+			<div>
+			<h4 id="nagl7">Zasilacz</h4>
+			<p id="tekst7">Zasilanie podzespołów komputera.</p>
+
+			<a href="./assets/zasilacz.html" class="button" id="przy7">Więcej o</a>
+			<img id="img7" src="./assets/obrazy/zasilacz1.jpg" style="width:250px;height:200px;" title="Zasilacz" alt="Tu miał być obraz zasilacza."></a>
+			</div>
+			</li>
+
+			<script>
+			const elements = document.querySelectorAll('p');
+			document.body.style.fontFamily = "Comic Sans MS";
+			</script>
+	</ul>
+	</b>
+</nav>
+
+</body>
+
+</html>
